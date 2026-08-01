@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Denny Rosales | Full-Stack Developer</title>
+  <meta name="description" content="Portafolio profesional de Denny Alexander Rosales Flores, desarrollador Full-Stack especializado en React, Svelte, Astro, NestJS y más." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">DR<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Disponible para proyectos
+      </div>
+      <h1 class="hero-title">
+        Hola, soy <span class="gradient-text">Denny Rosales</span>
+      </h1>
+      <p class="hero-subtitle">Full-Stack Developer</p>
+      <p class="hero-desc">
+        Desarrollo aplicaciones web modernas y escalables con React, Svelte, Astro, NestJS y más.
+        Apasionado por el rendimiento, la UX y la calidad del código.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+        <a href="#cv" class="btn btn-outline">Descargar CV</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">4+</span>
+          <span class="stat-label">Proyectos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">Tecnologías</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">60%</span>
+          <span class="stat-label">Cloudflare</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="code-filename">dev.ts</span>
+        </div>
+        <pre class="code-body"><code><span class="kw">const</span> <span class="fn">developer</span> = {
+  <span class="prop">name</span>: <span class="str">"Denny Rosales"</span>,
+  <span class="prop">role</span>: <span class="str">"Full-Stack Dev"</span>,
+  <span class="prop">stack</span>: [
+    <span class="str">"React"</span>, <span class="str">"Svelte"</span>,
+    <span class="str">"Astro"</span>, <span class="str">"NestJS"</span>,
+    <span class="str">"Next.js"</span>, <span class="str">"Node.js"</span>
+  ],
+  <span class="prop">cloud</span>: <span class="str">"Cloudflare 60%"</span>,
+  <span class="prop">available</span>: <span class="kw">true</span>
+};</code></pre>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-tag">Sobre mí</div>
+      <h2 class="section-title">¿Quién soy?</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Soy <strong>Denny Alexander Rosales Flores</strong>, desarrollador Full-Stack con experiencia creando aplicaciones web 
+            de alto rendimiento. Me especializo en el ecosistema JavaScript/TypeScript moderno, 
+            abarcando desde el frontend con React, Svelte y Astro hasta el backend con NestJS y Node.js.
+          </p>
+          <p>
+            He trabajado en proyectos reales que incluyen plataformas de pagos, gestión de usuarios, 
+            almacenamiento en la nube con Cloudflare R2 y despliegues de producción con dominio personalizado.
+          </p>
+          <p>
+            Mi investigación de titulación comparó el rendimiento de frameworks modernos (React vs Svelte), 
+            demostrando mi capacidad analítica y compromiso con la calidad técnica.
+          </p>
+          <div class="about-chips">
+            <span class="chip">🎓 Egresado en Sistemas</span>
+            <span class="chip">⚡ Performance First</span>
+            <span class="chip">☁️ Cloudflare 60%</span>
+            <span class="chip">🌐 Proyectos en Producción</span>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="info-card">
+            <div class="info-icon">🚀</div>
+            <h3>Frontend</h3>
+            <p>React, Svelte, Astro, Next.js, HTML/CSS/JS con animaciones y rendimiento optimizado.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">⚙️</div>
+            <h3>Backend</h3>
+            <p>NestJS, Node.js, APIs REST, autenticación, pagos online y gestión de base de datos.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">☁️</div>
+            <h3>Cloud & DevOps</h3>
+            <p>Cloudflare (dominio, R2, Workers, correo), Vercel, despliegues en producción.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">🔒</div>
+            <h3>Seguridad & Auth</h3>
+            <p>Registro de usuarios, sesiones, roles, integración de pasarelas de pago.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-tag">Tecnologías</div>
+      <h2 class="section-title">Mi Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Frontend</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-icon">⚛️</span><span>React</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+            <div class="skill-item"><span class="skill-icon">🔶</span><span>Svelte</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+            <div class="skill-item"><span class="skill-icon">🚀</span><span>Astro</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+            <div class="skill-item"><span class="skill-icon">▲</span><span>Next.js</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+            <div class="skill-item"><span class="skill-icon">🎨</span><span>HTML/CSS/JS</span><div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Backend</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-icon">🐱</span><span>NestJS</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+            <div class="skill-item"><span class="skill-icon">🟢</span><span>Node.js</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+            <div class="skill-item"><span class="skill-icon">📘</span><span>TypeScript</span><div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div></div>
+            <div class="skill-item"><span class="skill-icon">🗄️</span><span>SQL / PostgreSQL</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Cloud & Herramientas</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-icon">🌩️</span><span>Cloudflare</span><div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div></div>
+            <div class="skill-item"><span class="skill-icon">▲</span><span>Vercel</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+            <div class="skill-item"><span class="skill-icon">🐙</span><span>Git / GitHub</span><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
+            <div class="skill-item"><span class="skill-icon">💳</span><span>Pasarelas de Pago</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
+            <div class="skill-item"><span class="skill-icon">📧</span><span>Email / SMTP</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-tag">Proyectos</div>
+      <h2 class="section-title">Lo que he construido</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-badge">Destacado</div>
+          <div class="project-header">
+            <div class="project-tech-tags">
+              <span class="tech-tag nestjs">NestJS</span>
+              <span class="tech-tag cf">Cloudflare</span>
+              <span class="tech-tag next">Next.js</span>
+            </div>
+          </div>
+          <h3 class="project-title">Nutricionista David Batallas</h3>
+          <p class="project-desc">
+            Plataforma completa para nutricionista: pagos en línea, registro/login de usuarios, 
+            subida de informes médicos, videos y gestión de contenido. Dominio personalizado con 
+            Cloudflare, envío de correos transaccionales y almacenamiento en R2.
+          </p>
+          <ul class="project-features">
+            <li>💳 Sistema de pagos y ventas</li>
+            <li>👤 Registro y autenticación de usuarios</li>
+            <li>📄 Subida de informes y videos (Cloudflare R2)</li>
+            <li>📧 Correos transaccionales</li>
+            <li>🌐 Dominio con Cloudflare</li>
+          </ul>
+          <div class="project-footer">
+            <a href="https://www.nutricionistadavidbatallas.com/" target="_blank" class="btn btn-primary btn-sm">Ver sitio →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-tech-tags">
+              <span class="tech-tag astro">Astro</span>
+              <span class="tech-tag cf">Cloudflare</span>
+            </div>
+          </div>
+          <h3 class="project-title">Hospedaje Salinas</h3>
+          <p class="project-desc">
+            Sitio web para venta y difusión de departamentos, hoteles y hostales en Salinas. 
+            Creado con Astro, incluye animaciones fluidas, redirección a reservas y dominio 
+            propio con Cloudflare.
+          </p>
+          <ul class="project-features">
+            <li>🏨 Catálogo de alojamientos</li>
+            <li>✨ Animaciones y transiciones</li>
+            <li>🔗 Redirección a booking</li>
+            <li>🌐 Dominio personalizado</li>
+          </ul>
+          <div class="project-footer">
+            <a href="https://www.hospedajesalinas.com/" target="_blank" class="btn btn-primary btn-sm">Ver sitio →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-badge badge-research">Investigación</div>
+          <div class="project-header">
+            <div class="project-tech-tags">
+              <span class="tech-tag react">React</span>
+              <span class="tech-tag vercel">Vercel</span>
+            </div>
+          </div>
+          <h3 class="project-title">Performance App — React</h3>
+          <p class="project-desc">
+            Aplicación desarrollada en React como parte de mi investigación de titulación para 
+            comparar el rendimiento entre frameworks modernos. Métricas de velocidad, carga y 
+            renderizado analizadas a profundidad.
+          </p>
+          <ul class="project-features">
+            <li>📊 Análisis de rendimiento</li>
+            <li>⚛️ React moderno</li>
+            <li>🔬 Comparativa académica</li>
+          </ul>
+          <div class="project-footer">
+            <a href="https://front-react-ochre-six.vercel.app/" target="_blank" class="btn btn-primary btn-sm">Ver demo →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-badge badge-research">Investigación</div>
+          <div class="project-header">
+            <div class="project-tech-tags">
+              <span class="tech-tag svelte">Svelte</span>
+              <span class="tech-tag vercel">Vercel</span>
+            </div>
+          </div>
+          <h3 class="project-title">Performance App — Svelte</h3>
+          <p class="project-desc">
+            Aplicación equivalente desarrollada en Svelte para la misma investigación de titulación. 
+            Demostró diferencias significativas en tiempo de compilación, tamaño de bundle y métricas 
+            de rendimiento frente a React.
+          </p>
+          <ul class="project-features">
+            <li>📊 Análisis de rendimiento</li>
+            <li>🔶 Svelte / SvelteKit</li>
+            <li>🔬 Comparativa académica</li>
+          </ul>
+          <div class="project-footer">
+            <a href="https://front-svelte.vercel.app/" target="_blank" class="btn btn-primary btn-sm">Ver demo →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CV VIEWER -->
+  <section id="cv" class="cv-section">
+    <div class="container">
+      <div class="section-tag">Currículum</div>
+      <h2 class="section-title">Mi CV</h2>
+      <div class="cv-wrapper">
+        <div class="cv-actions">
+          <a href="ROSALES FLORES DENNY ALEXANDER (1).pdf" download class="btn btn-primary">⬇ Descargar PDF</a>
+          <a href="ROSALES FLORES DENNY ALEXANDER (1).pdf" target="_blank" class="btn btn-outline">🔗 Abrir en nueva pestaña</a>
+        </div>
+        <div class="cv-viewer">
+          <iframe 
+            src="ROSALES FLORES DENNY ALEXANDER (1).pdf" 
+            id="cv-iframe"
+            title="CV Denny Rosales"
+            width="100%" 
+            height="800"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-tag">Contacto</div>
+      <h2 class="section-title">Trabajemos juntos</h2>
+      <p class="contact-subtitle">¿Tienes un proyecto en mente? Estoy disponible para freelance y oportunidades.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:dennyrosales@email.com" class="contact-value">dennyrosales@email.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/" target="_blank" class="contact-value">github.com/dennyrosales</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">💼</div>
+            <div>
+              <span class="contact-label">Disponibilidad</span>
+              <span class="contact-value available">✅ Disponible ahora</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <span class="contact-label">Ubicación</span>
+              <span class="contact-value">Ecuador 🇪🇨</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="4" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">Enviar mensaje →</button>
+          <p class="form-note" id="form-msg"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-name">Denny Rosales</p>
+        <p class="footer-copy">© 2026 · Full-Stack Developer · Hecho con ❤️</p>
+        <div class="footer-links">
+          <a href="https://www.nutricionistadavidbatallas.com/" target="_blank">Nutricionista</a>
+          <a href="https://www.hospedajesalinas.com/" target="_blank">Hospedaje</a>
+          <a href="https://front-react-ochre-six.vercel.app/" target="_blank">React App</a>
+          <a href="https://front-svelte.vercel.app/" target="_blank">Svelte App</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

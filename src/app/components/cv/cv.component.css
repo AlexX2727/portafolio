@@ -1,0 +1,22 @@
+.cv-section { padding: 100px 0; background: var(--bg); }
+
+.cv-wrapper { display: flex; flex-direction: column; gap: 20px; }
+
+.cv-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+.cv-frame {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.cv-frame iframe {
+  display: block;
+  border: none;
+  min-height: 850px;
+}
+
+@media (max-width: 600px) {
+  .cv-frame iframe { min-height: 520px; }
+}

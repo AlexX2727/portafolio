@@ -1,0 +1,163 @@
+/* =============================================
+   DESIGN TOKENS — Paleta Suave & Profesional
+   ============================================= */
+:root {
+  /* Fondos — más claros, menos cave negro */
+  --bg:       #0e1117;
+  --bg2:      #131720;
+  --bg3:      #171d2d;
+  --surface:  #1a2035;
+  --surface2: #202840;
+
+  /* Bordes sutiles */
+  --border:       rgba(120, 150, 220, 0.10);
+  --border-hover: rgba(120, 150, 220, 0.28);
+
+  /* Colores de acento — menos saturados, más elegantes */
+  --cyan:      #60a5fa;           /* azul cielo suave */
+  --cyan-dim:  rgba(96,165,250,0.08);
+  --blue:      #818cf8;           /* índigo suave */
+  --blue-dim:  rgba(129,140,248,0.08);
+  --purple:    #c084fc;           /* lavanda */
+  --green:     #34d399;
+
+  /* Texto */
+  --text:       #dde4f0;
+  --text-muted: #7e8da3;
+  --text-dim:   #3d4a60;
+
+  /* Gradiente más sobrio */
+  --gradient: linear-gradient(135deg, #60a5fa 0%, #818cf8 50%, #c084fc 100%);
+
+  /* Sombras — sin glow neon agresivo */
+  --radius:    12px;
+  --radius-lg: 18px;
+  --shadow:    0 8px 28px rgba(0,0,0,0.45);
+  --glow:      0 0 32px rgba(96,165,250,0.07);   /* muy sutil */
+
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --t: 0.28s;
+
+  --font: 'Inter', sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+}
+
+/* =============================================
+   RESET & BASE
+   ============================================= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { text-decoration: none; color: inherit; transition: color var(--t) var(--ease); }
+ul { list-style: none; }
+img { max-width: 100%; display: block; }
+button { cursor: pointer; border: none; font-family: var(--font); }
+
+/* =============================================
+   SCROLLBAR
+   ============================================= */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 3px; }
+
+/* =============================================
+   UTILITIES
+   ============================================= */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+.gradient-text {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--cyan);
+  padding: 5px 14px;
+  background: var(--cyan-dim);
+  border: 1px solid rgba(96,165,250,0.18);
+  border-radius: 50px;
+  margin-bottom: 14px;
+  font-family: var(--mono);
+}
+
+.section-title {
+  font-size: clamp(26px, 5vw, 40px);
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 48px;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* =============================================
+   BUTTONS
+   ============================================= */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 26px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all var(--t) var(--ease);
+  white-space: nowrap;
+}
+.btn-primary {
+  background: var(--gradient);
+  color: #fff;
+  box-shadow: 0 3px 14px rgba(129,140,248,0.28);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 22px rgba(129,140,248,0.40); }
+.btn-outline {
+  background: transparent;
+  color: var(--cyan);
+  border: 1.5px solid rgba(96,165,250,0.45);
+}
+.btn-outline:hover { background: var(--cyan-dim); transform: translateY(-2px); }
+.btn-sm { padding: 7px 16px; font-size: 13px; }
+.btn-full { width: 100%; justify-content: center; }
+
+/* =============================================
+   REVEAL ANIMATION
+   ============================================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .7s var(--ease), transform .7s var(--ease);
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-36px);
+  transition: opacity .7s var(--ease), transform .7s var(--ease);
+}
+.reveal-left.visible { opacity: 1; transform: translateX(0); }
+.reveal-right {
+  opacity: 0;
+  transform: translateX(36px);
+  transition: opacity .7s var(--ease), transform .7s var(--ease);
+}
+.reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+@media (max-width: 768px) {
+  .section-title { margin-bottom: 32px; }
+}
