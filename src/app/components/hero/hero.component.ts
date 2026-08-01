@@ -23,7 +23,7 @@ import { CommonModule } from '@angular/common';
           </h1>
 
           <p class="hero-role">
-            <span class="role-tag">Ing. Tecnología de la Información</span>
+            <span class="role-tag">Ingeniero en Tecnología de la Información</span>
           </p>
 
           <p class="hero-subtitle">Full-Stack Developer</p>
@@ -66,7 +66,7 @@ import { CommonModule } from '@angular/common';
             </div>
             <pre class="code-body"><code><span class="kw">const</span> <span class="fn">denny</span> = &#123;
   <span class="prop">name</span>:  <span class="str">"Denny Rosales"</span>,
-  <span class="prop">title</span>: <span class="str">"Ing. TI"</span>,
+  <span class="prop">title</span>: <span class="str">"Ing. Tecnología Info."</span>,
   <span class="prop">role</span>:  <span class="str">"Full-Stack Dev"</span>,
   <span class="prop">stack</span>: [
     <span class="str">"Angular"</span>, <span class="str">"React"</span>,
